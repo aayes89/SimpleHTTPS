@@ -5,3 +5,5 @@ A simple HTTPS NodeJs server
 - <code>sudo npm install https fs express</code>
 - habilita en el cortafuegos <code> sudo ufw allow https</code>
 - ejecuta <code>sudo node app.js</code> y disfruta.
+# Porqué usar "SUDO"
+Los puertos reservados son aquellos que van del rango 0 al 1023. Para poder escuchar en estos puertos, en la mayoría de los sistemas operativos basados en UNIX (como Linux), es necesario tener privilegios de superusuario (root). Esto es porque estos puertos están tradicionalmente reservados para servicios y protocolos bien conocidos y esenciales, como HTTP (80), HTTPS (443), SSH (22), FTP (21), etc.
