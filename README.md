@@ -1,5 +1,11 @@
 # SimpleHTTPS
-Un servidor HTTPS simple para NodeJs
+Un servidor HTTPS simple para NodeJs.
+# Pasos previos
+Debes crear los certificados que vas a usar, ya sea en modo solitario (standalone) o compartido (si quieres usar unos previamente creados).
+<br> Editar el fichero <b>app.js</b>:
+- añade la ruta exacta de la llave y el certificado para que puedas iniciar el servidor HTTPS.
+# Como crear un certificado con llave
+- siga los pasos en <a href="https://certbot.eff.org/">Crear certificado</a>
 # Como usar
 - instala NodeJS y NPM
 - <code>sudo npm install https fs express</code>
