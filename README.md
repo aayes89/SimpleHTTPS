@@ -1,5 +1,5 @@
 # SimpleHTTPS
-A simple HTTPS NodeJs server
+Un servidor HTTPS simple para NodeJs
 # Como usar
 - instala NodeJS y NPM
 - <code>sudo npm install https fs express</code>
