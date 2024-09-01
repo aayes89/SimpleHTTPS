@@ -3,7 +3,8 @@ const fs = require('fs');
 const express = require('express'); // Asumiendo que estás usando Express
 
 const app = express();
-
+// Puerto HTTPS
+const PORT = process.env.PORT || 443;
 // Cargar los certificados SSL
 const options = {
     key: fs.readFileSync('/ruta/a/tu/server.key'),
@@ -16,6 +17,6 @@ app.get('/', (req, res) => {
 });
 
 // Crear servidor HTTPS
-https.createServer(options, app).listen(443, () => {
+https.createServer(options, app).listen(PORT, () => {
     console.log('Servidor HTTPS ejecutándose en el puerto 443');
 });
